@@ -8,12 +8,31 @@ a vue-cli your owm ,use similar json-object to configure webpack
 通过学习本项目的构建过程逐步了解webpack常用配置项，一步一步尝试编写出一个属于自己的vue-cli脚手架工具
 
 
-### 教程
-通过从头学习本github 相关的一些列文章逐步学会使用webpack搭建出可配置的半自动化vue工程构建项目。
+## 教程
+> 通过从头学习本github 相关的一些列文章逐步学会使用webpack搭建出可配置的半自动化vue工程构建项目。
 
 [从搭建vue-脚手架到掌握webpack配置（一.基础配置）](https://juejin.im/post/5a531f4c6fb9a01cb80f926f)<br>
 [从搭建vue-脚手架到掌握webpack配置（二.插件与提取)](https://juejin.im/post/5a55b7c851882573315c4287)<br>
-[从搭建vue-脚手架到掌握webpack配置（三.多页面构建）](https://juejin.im/post/5a5cb391f265da3e317e2579)
+[从搭建vue-脚手架到掌握webpack配置（三.多页面构建）](https://juejin.im/post/5a5cb391f265da3e317e2579)<br>
+[从搭建vue-脚手架到掌握webpack配置（四.自动化封装）](https://juejin.im/post/5a8453ae6fb9a0636263d968)<br>
+
+## starts
+run :
+```
+npm install
+npm run build
+```
+
+clean dist directory :
+```
+npm run clean
+```
+
+
+clean and build :
+```
+npm run c-b
+```
 
 ## usage
 ### json式配置
