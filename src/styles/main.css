@@ -1,0 +1,9 @@
+@import './reset.css';
+
+#app{
+    color:red;
+}
+.bder-b{
+    box-sizing: border-box;
+    display:flex
+}
