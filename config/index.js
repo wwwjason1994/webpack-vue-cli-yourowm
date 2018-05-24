@@ -101,9 +101,10 @@ const cssLoaders = function(options){
     let loaders = {};
     if(loaderList.indexOf('css') === -1)loaderList.unshift("css")
     loaderList.forEach(element => {
-        const loaderOptions = cssRules[element]&&cssRules[element].options
+        const loaderOptions = cssRules[element]&&cssRules[element].options;
+        const loaderName = cssRules[element]&&cssRules[element].name;
         let arr = element==="css" ? [] : [{
-            loader: element+"-loader",
+            loader: loaderName+"-loader",
             options: Object.assign({}, loaderOptions, {
                 sourceMap: options.sourceMap
             })
