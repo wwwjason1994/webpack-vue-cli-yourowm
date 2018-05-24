@@ -36,7 +36,7 @@ const webpackConfig = merge(baseWebpackConfig, {
                 return sPath &&
                     /\.js$/.test(sPath) &&
                     sPath.indexOf(
-                        path.join(__dirname, 'node_modules')
+                        path.join(__dirname, '../node_modules')
                     ) === 0
             }
         }),
