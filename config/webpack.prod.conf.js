@@ -23,10 +23,10 @@ const webpackConfig = merge(baseWebpackConfig, {
             minimize: true
         }),
         //提取多入库的公共模块
-        new webpack.optimize.CommonsChunkPlugin({
+        Object.keys(config.page).length >= 2 ? new webpack.optimize.CommonsChunkPlugin({
             name: 'common',
             minChunks:2
-        }),
+        }):()=>{},
         //抽取从node_modules引入的模块，如vue
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vender',
