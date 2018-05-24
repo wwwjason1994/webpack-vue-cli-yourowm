@@ -34,7 +34,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
-const ExtractRootCss = new ExtractTextPlugin({filename:'styles/root.[hash].css',allChunks:false});
+const ExtractRootCss = new ExtractTextPlugin({filename:'styles/[name].root.[chunkhash].css',allChunks:false});
 const ExtractVueCss = new ExtractTextPlugin({filename:'styles/[name].[chunkhash].css',allChunks:true});
 
 const isProduction = process.env.NODE_ENV === 'production'
